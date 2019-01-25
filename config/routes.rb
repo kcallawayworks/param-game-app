@@ -2,14 +2,13 @@ Rails.application.routes.draw do
   # STEP 1: A ROUTE triggers a controller action
   # verb "/urls" => "namespace/controllers#action"
   namespace :api do
-
-  get "/using_params/:segment" => "params#params_method"
+    post "/one_actor" => "params#one_actor_method"
   
   end
 end
 
 
-
+  # get "/using_params/:segment" => "params#params_method"
 
 # URL Segment Parameters allow us to use a particular segment of the url as a wildcard. For example, if we declare a segment as a wildcard in the routes like this - localhost:3000/home/:wildcard, then a user can create urls like this:
 
